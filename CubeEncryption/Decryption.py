@@ -1,7 +1,16 @@
 from Cube import Cube
 
 class Decryption:
-    def __init__(self, text, key):
+    def __init__(self, FILEPATH):
+        with open(FILEPATH, 'r') as file:
+            lines = file.readlines()
+
+            key_line = lines[0].strip()
+            key = key_line.split(':', 1)[1].strip()
+
+            text_lines = lines[2:]
+            text = ''.join(text_lines).strip()
+
         self.key_ls = key.split(":")
         self.split_text = [text[i:i + 8] for i in range(0, len(text), 8)]
         self.cubes = [Cube(i) for i in self.split_text]
@@ -31,5 +40,9 @@ class Decryption:
 
         for cube in self.cubes:
             self.decrypted_text += cube.get_text()
+
+        with open("../decrypted", 'w') as file:
+            file.write(self.decrypted_text)
+            file.write("\n")
 
         return self.decrypted_text
