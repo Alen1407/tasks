@@ -1,7 +1,10 @@
 ## Representing Text and Images
 
 ### Characters and the ASCII Table
-Characters are the basic units used to represent text in computers. They can include letters, digits, punctuation marks, and special symbols. The ASCII (American Standard Code for Information Interchange) encoding scheme is widely used to represent characters in computers. ASCII maps each character to a unique 7-bit binary code, allowing for a total of 128 different characters. The ASCII table serves as a reference that lists the characters in the ASCII encoding scheme along with their corresponding binary codes. It provides a standardized way to represent text characters in digital form. For example, the character 'A' is represented by the binary code 01000001 in ASCII.
+  Characters are the basic units used to represent text in computers. They can include letters, digits, punctuation marks, and special symbols. The ASCII (American Standard Code for Information Interchange) encoding scheme is widely used to represent characters in computers. ASCII maps each character to a unique 7-bit binary code, allowing for a total of 128 different characters. The ASCII table serves as a reference that lists the characters in the ASCII encoding scheme along with their corresponding binary codes. It provides a standardized way to represent text characters in digital form. 
+  > For example, the character 'A' is represented by the binary code 01000001 in ASCII.
+
+![Alt text](http://www.plcdev.com/files/plcdev/images/Simple%20ASCII%20Table_0.gif)
 
 ### Unicode
 While the ASCII encoding scheme is sufficient for representing characters in the English language, it has limitations when it comes to representing characters from different languages and scripts. To overcome these limitations, Unicode was introduced as a universal character encoding standard. Unicode provides a comprehensive solution for representing characters from various languages, scripts, and symbols worldwide. Unicode expands character representation by using either 16 bits (UTF-16) or 32 bits (UTF-32) to encode characters. This allows for the inclusion of a vast range of characters, including emojis, special symbols, and characters from different writing systems. Unicode supports multilingual text representation and facilitates global communication and interoperability.
